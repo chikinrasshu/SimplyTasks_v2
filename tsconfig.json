@@ -4,5 +4,6 @@
         {"path": "packages/common"},
         {"path": "packages/backend"},
         {"path": "packages/frontend"}
-    ]
+    ],
+    "exclude": ["node_modules"],
 }
