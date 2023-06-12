@@ -18,7 +18,7 @@ export const config = {
     },
     database: {
         host: process.env.DATABASE_HOST ?? "localhost",
-        port: Number(process.env.DATABASE_PORT ?? "5000"),
+        port: Number(process.env.DATABASE_PORT ?? "3306"),
         user: process.env.DATABASE_USER ?? "default_user",
         pass: process.env.DATABASE_PASS ?? "default_pass",
         name: process.env.DATABASE_NAME ?? "simplytasks"
