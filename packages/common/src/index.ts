@@ -24,3 +24,5 @@ export const config = {
         name: process.env.DATABASE_NAME ?? "simplytasks"
     },
 };
+
+export default config;

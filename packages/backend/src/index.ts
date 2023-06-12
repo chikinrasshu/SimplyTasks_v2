@@ -1,6 +1,7 @@
 import express, {Application, Request, Response} from "express";
 import { config } from "@simplytasks/common";
 import userRouter from "./routes/user";
+import postRouter from "./routes/post";
 
 const app: Application = express();
 
@@ -14,6 +15,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/user", userRouter);
+app.use("/post", postRouter);
 
 // Listen
 const server = app.listen(config.backend.port, config.backend.host, ()=>{
