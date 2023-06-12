@@ -1,4 +1,4 @@
-import mysql from "mysql";
+import mysql from "mysql2";
 import { config } from "@simplytasks/common";
 
 const connection = mysql.createConnection({

@@ -2,7 +2,6 @@ const prod = process.env.NODE_ENV === 'production';
 
 const common = require("@simplytasks/common");
 const config = common.config;
-console.log(config);
 
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin');

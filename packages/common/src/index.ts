@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 import path from "path";
 
 const dotenvPath = path.join(__dirname, "../.env");
-console.log(`Loading .env from ${dotenvPath}`);
 dotenv.config({path: dotenvPath});
 
 export const config = {
@@ -20,7 +19,7 @@ export const config = {
     database: {
         host: process.env.DATABASE_HOST ?? "localhost",
         port: Number(process.env.DATABASE_PORT ?? "5000"),
-        user: process.env.DATABASE_SECRET ?? "default_user",
+        user: process.env.DATABASE_USER ?? "default_user",
         pass: process.env.DATABASE_PASS ?? "default_pass",
         name: process.env.DATABASE_NAME ?? "simplytasks"
     },
