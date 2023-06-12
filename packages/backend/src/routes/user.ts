@@ -188,7 +188,7 @@ router.delete("/all", (req: Request, res: Response) => {
 });
 
 // Login
-router.get("/login", (req: Request, res:Response) => {
+router.post("/login", (req: Request, res:Response) => {
     try {
         const {mail, pass} = req.body;
         if (!mail) return res.status(401).json({ msg: "Missing Email", err: "Missing Email" });
