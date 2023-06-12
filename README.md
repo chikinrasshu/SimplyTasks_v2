@@ -2,7 +2,7 @@
 
 ## Integrantes:
 * Jorge Botarro Westerhout
-* ?
+* Jorge Ugarte Olivares
 
 ## Requisitos:
 * Importar `simplytasks.sql` a mysql.

@@ -6,6 +6,7 @@ const config = common.config;
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const SvgUrlLoaderPlugin = require('svg-url-loader');
 
 module.exports = {
   mode: prod ? 'production' : 'development',
@@ -24,9 +25,20 @@ module.exports = {
         use: 'ts-loader',
       },
       {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
+      }
     ]
   },
   devtool: prod ? undefined : 'source-map',
@@ -37,7 +49,9 @@ module.exports = {
   plugins: [
     new NodePolyfillPlugin(),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      filename: "index.html",
+      template: "src/index.html",
+      chunks: ["main"]
     }),
     new MiniCssExtractPlugin(),
   ]

@@ -13,6 +13,7 @@
         "sourceMap": true,
         "target": "esnext",
       },
+    "include": ["src/custom.d.ts"],
     "exclude": ["node_modules"],
     "references": [{"path": "../common"}]
 }

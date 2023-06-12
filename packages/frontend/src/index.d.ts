@@ -5,3 +5,4 @@ import 'core-js/features/set';
 import 'raf/polyfill';
 import 'whatwg-fetch';
 import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';

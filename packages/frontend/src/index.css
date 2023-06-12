@@ -1,3 +1,11 @@
-body {
-    color: blue;
+html, body, #app-root {
+    display: flex;
+    flex-direction:column; 
+    height: 100vh;
+    margin:0;
+}
+
+.nav-logo {
+    width: 30px;
+    height: 30px;
 }
