@@ -11,9 +11,12 @@
         ],
         "strict": true,
         "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
         "target": "esnext",
+        "outDir": "dist"
       },
-    "include": ["src/custom.d.ts"],
+    "include": ["src/components/custom.d.ts"],
     "exclude": ["node_modules"],
     "references": [{"path": "../common"}]
 }
