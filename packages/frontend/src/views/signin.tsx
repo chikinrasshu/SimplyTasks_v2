@@ -6,7 +6,7 @@ import config from "@simplytasks/common";
 import { Button, FloatingLabel, Form, Row } from "react-bootstrap";
 
 const SignIn: React.FC = () => {
-    const action = `${config.backend.host}:${config.backend.port}/user/add`;
+    const action = `${config.backend.host}:${config.backend.port}/user/login`;
 
     return (
         <Window title="Iniciar Sesi&oacute;n">

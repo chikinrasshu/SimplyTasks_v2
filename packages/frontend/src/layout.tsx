@@ -15,7 +15,7 @@ const Layout: React.FC = () => {
                 <Container fluid>
                     <Navbar.Brand href="#home">
                         <LinkContainer to="/">
-                            <Nav.Link>
+                            <Nav.Link as="button">
                                 <img src="img/logo.svg" width={30} height={30} />
                                 &nbsp;SimplyTasks
                             </Nav.Link>
@@ -24,15 +24,15 @@ const Layout: React.FC = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <LinkContainer to="/test"><Nav.Link>Test</Nav.Link></LinkContainer>
-                            <LinkContainer to="/tareas"><Nav.Link>Tareas</Nav.Link></LinkContainer>
-                            <LinkContainer to="/progreso"><Nav.Link>Progreso</Nav.Link></LinkContainer>
-                            <LinkContainer to="/horario"><Nav.Link>Horario</Nav.Link></LinkContainer>
-                            <LinkContainer to="/notificaciones"><Nav.Link>Notificaciones</Nav.Link></LinkContainer>
+                            <LinkContainer to="/test"><Nav.Link as="button">Test</Nav.Link></LinkContainer>
+                            <LinkContainer to="/tareas"><Nav.Link as="button">Tareas</Nav.Link></LinkContainer>
+                            <LinkContainer to="/progreso"><Nav.Link as="button">Progreso</Nav.Link></LinkContainer>
+                            <LinkContainer to="/horario"><Nav.Link as="button">Horario</Nav.Link></LinkContainer>
+                            <LinkContainer to="/notificaciones"><Nav.Link as="button">Notificaciones</Nav.Link></LinkContainer>
                         </Nav>
                         <Nav>
-                            <LinkContainer to="/signin"><Nav.Link>Iniciar Sesi&oacute;n</Nav.Link></LinkContainer>
-                            <LinkContainer to="/signup"><Nav.Link>Crear Cuenta</Nav.Link></LinkContainer>
+                            <LinkContainer to="/signin"><Nav.Link as="button">Iniciar Sesi&oacute;n</Nav.Link></LinkContainer>
+                            <LinkContainer to="/signup"><Nav.Link as="button">Crear Cuenta</Nav.Link></LinkContainer>
                         </Nav>
                         <Nav>
                             <NavDropdown align="end" title="Link" id="navbarScrollingDropdown">

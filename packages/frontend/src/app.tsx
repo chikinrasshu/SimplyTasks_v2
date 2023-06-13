@@ -10,6 +10,7 @@ import Layout from "./layout";
 import Root from "./views/root";
 import SignIn from "./views/signin";
 import SignUp from "./views/signup";
+import Help from "./views/help";
 
 const App: React.FC = () => {
     return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                     <Route path="/" element={<Root />} />
                     <Route path="/signin" element={<SignIn />} />
                     <Route path="/signup" element={<SignUp />} />
+                    <Route path="/ayuda" element={<Help />} />
                     <Route path="/404" element={<NotFound />} />
                     <Route path="*" element={<Navigate replace to="/404" />} />
                 </Route>

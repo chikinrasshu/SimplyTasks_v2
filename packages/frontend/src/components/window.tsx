@@ -8,7 +8,7 @@ interface Props extends React.PropsWithChildren {
 const Window: React.FC<Props> = ({children, title}) => {
     return (
         <Card className="shadow m-3">
-            <Card.Body>
+            <Card.Body className="p-2">
                 {title &&
                 <>
                     <h3 className="mb-4 pb-2 pb-md-0 text-center">{title}</h3>
